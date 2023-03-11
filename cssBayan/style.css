@@ -9,3 +9,50 @@ html {
   margin: 0;
   padding: 0;
 }
+
+img {
+  max-width: 100%;
+  object-fit: cover;
+}
+
+body {
+  font-family: 'Roboto', 'Arial', sans-serif;
+  font-size: 1.25rem;
+  font-weight: 500;
+}
+
+.container {
+  max-width: 60vw;
+  margin: 0 auto;
+}
+
+.accordion {
+  width: 100%;
+}
+
+.accordion__item {
+  background-color: #f3f3f3;
+}
+
+.accordion__header {
+  display: flex;
+  justify-content: space-between;
+  padding: 1.25rem;
+}
+
+.accordion__close-btn {
+  display: none;
+}
+
+.accordion__img-box {
+  display: none;
+  transition: all 1s ease-in-out;
+}
+
+.accordion__item:hover > .accordion__img-box {
+  display: block;
+}
+
+.accordion__img-box:active {
+  background-color: black;
+}
